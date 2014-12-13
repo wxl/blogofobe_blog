@@ -1,3 +1,7 @@
+Trying to keep Blogofile going. Currently, issues and pull requests don't seem to be getting any attention. So I'm slowly making this my own project.
+
+---
+
 This is a Blogofile_ plugin that implements a basic blog engine.
 
 .. _Blogofile: http://www.blogofile.com/
