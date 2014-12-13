@@ -74,17 +74,22 @@ def run():
     blog.iter_posts_published = iter_posts_published
     blog.dir = bf.util.fs_site_path_helper(bf.writer.output_dir, blog.path)
     # Find all the categories and archives before we write any pages
-    blog.archived_posts = {}  # "/archive/Year/Month" -> [post, post, ... ]
-    blog.archive_links = []   # [("/archive/2009/12", name,
-                              #   num_in_archive1), ...]
-                              # (sorted in reverse by date)
-    blog.categorized_posts = {}  # "Category Name" -> [post, post, ... ]
-    blog.all_categories = []  # [("Category 1",num_in_category_1), ...]
-                              # (sorted alphabetically)
+    blog.archived_posts = {}    # "/archive/Year/Month" -> [post, post, ... ]
+    blog.archive_links = []     # [("/archive/2009/12", name,
+                                #   num_in_archive1), ...]
+                                # (sorted in reverse by date)
+    blog.categorized_posts = {} # "Category Name" -> [post, post, ... ]
+    blog.tagged_posts = {}      # "Tag Name" -> [post, post, ... ]
+    blog.all_categories = []    # [("Category 1",num_in_category_1), ...]
+                                # (sorted alphabetically)
+    blog.all_tags = []          # [("Tag 1",num_in_tag_1), ...]
+                                # (sorted alphabetically)
     archives.sort_into_archives()
     categories.sort_into_categories()
+    tags.sort_into_categories()
     permapage.run()
     chronological.run()
     archives.run()
     categories.run()
+    tags.run()
     feed.run()
