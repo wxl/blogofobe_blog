@@ -1,8 +1,7 @@
 include README.rst
-include CHANGES.txt
 include CONTRIBUTORS.txt
-recursive-include blogofile_blog/site_src *
-recursive-exclude blogofile_blog/site_src *.pyc *.bak
+recursive-include blogofobe_blog/site_src *
+recursive-exclude blogofobe_blog/site_src *.pyc *.bak
 
 
 
