@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Unit tests for blogofile blog post module.
+"""Unit tests for blogofobe blog post module.
 """
 from datetime import datetime
 try:
