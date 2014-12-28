@@ -3,7 +3,7 @@ from __future__ import print_function
 import shutil
 import sys
 import os
-import blogofile.main
+import blogofobe.main
 
 
 def load_env():
@@ -64,15 +64,15 @@ def copy_templates(args):
 
 
 def create_post(args):
-    blogofile.config.init_interactive(args)
+    blogofobe.config.init_interactive(args)
     load_env()
     post.create_post_template(args.TITLE)
 
 
 def list_posts(args):
-    blogofile.config.init_interactive(args)
+    blogofobe.config.init_interactive(args)
 
-    from blogofile import plugin, filter
+    from blogofobe import plugin, filter
     plugin.init_plugins()
     filter.init_filters()
     load_env()

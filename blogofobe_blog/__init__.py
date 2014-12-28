@@ -5,9 +5,9 @@ try:
     from urllib.parse import urlparse   # For Python 2
 except ImportError:
     from urlparse import urlparse       # For Python 2; flake8 ignore # NOQA
-import blogofile
-import blogofile.plugin
-from blogofile.cache import (
+import blogofobe
+import blogofobe.plugin
+from blogofobe.cache import (
     bf,
     HierarchicalCache as HC,
 )
@@ -22,17 +22,17 @@ __dist__ = dict(
     #referenced as bf.config.plugins.name
     config_name="blog",
     #Your name:
-    author="Ryan McGuire, Doug Latornell, and the Blogofile Contributors",
+    author="Walter Lapchynski, Ryan McGuire, and the blogofobe and Blogofile Contributors",
     #The version number:
     version="0.8b1",
     #The URL for the plugin (where to download, documentation etc):
-    url="http://www.blogofile.com",
-    #A one line description of your plugin presented to other Blogofile users:
+    url="http://github.com/wxl/blogofobe",
+    #A one line description of your plugin presented to other blogofobe users:
     description="A simple blog engine",
     #PyPI description, could be the same, except this text
-    #should mention the fact that this is a Blogofile plugin
-    #because non-Blogofile users will see this text:
-    pypi_description="A simple blog engine plugin for Blogofile",
+    #should mention the fact that this is a blogofobe plugin
+    #because non-blogofobe users will see this text:
+    pypi_description="A simple blog engine plugin for blogofobe",
     #Command parser
     command_parser_setup=commands.setup_parser
     )
@@ -48,14 +48,14 @@ config = HC(
     description="Your Blog's short description",
     ## blog_path -- Blog path.
     #  This is the path of the blog relative to the site_url.
-    #  If your site_url is "http://www.yoursite.com/~ryan"
+    #  If your site_url is "http://www.yoursite.com/~wxl"
     #  and you set blog_path to "/blog" your full blog URL would be
-    #  "http://www.yoursite.com/~ryan/blog"
+    #  "http://www.yoursite.com/~wxl/blog"
     #  Leave blank "" to set to the root of site_url
     path="/blog",
     ## blog_timezone -- the timezone that you normally write your blog
     ## posts from
-    timezone="US/Eastern",
+    timezone="US/Pacific",
     ## blog_posts_per_page -- Blog posts per page
     posts_per_page=5,
     # Automatic Permalink
@@ -71,7 +71,7 @@ config = HC(
                       path=":blog_path/:year/:month/:day/:title"),
     # Automatic Post filenames
     # Post can be created automatically with:
-    #   blogofile blog post create "Post Title"
+    #   blogofobe blog post create "Post Title"
     # auto_post_filename defines the filename format for posts
     # created this way.
     auto_post_filename=":year-:month-:day - :title.markdown",
@@ -80,7 +80,7 @@ config = HC(
               name="your_disqus_name"),
     #### Custom blog index ####
     # If you want to create your own index page at your blog root
-    # turn this on. Otherwise blogofile assumes you want the
+    # turn this on. Otherwise blogofobe assumes you want the
     # first X posts displayed instead
     custom_index=False,
     #### Post excerpts ####
@@ -93,19 +93,19 @@ config = HC(
                      word_length=25,
                      method=None),
     #### Blog pagination directory ####
-    # blogofile places extra pages of your blog in a secondary directory
+    # blogofobe places extra pages of your blog in a secondary directory
     # like:
     #   http://www.yourblog.com/blog_root/page/4
     # You can rename the "page" part here:
     pagination_dir="page",
     #### Blog category directory ####
-    # blogofile places extra pages of your or categories in
+    # blogofobe places extra pages of your or categories in
     # a secondary directory like the following:
     # http://www.yourblog.com/blog_root/category/your-topic/4
     # You can rename the "category" part here:
     category_dir="category",
     #### Blog tag directory ####
-    # blogofile places extra pages of your tags in a secondary
+    # blogofobe places extra pages of your tags in a secondary
     # directory like the following:
     # http://www.yourblog.com/blog_root/tag/your-tag/4
     # You can rename the "tag" part here:
@@ -155,7 +155,7 @@ config = HC(
         )
     )
 
-tools = blogofile.plugin.PluginTools(sys.modules[__name__])
+tools = blogofobe.plugin.PluginTools(sys.modules[__name__])
 
 
 def init():
