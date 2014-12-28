@@ -3,7 +3,7 @@ import os.path
 import re
 import sys
 from setuptools import setup
-import blogofile_blog
+import blogofobe_blog
 
 
 py_version = sys.version_info[:2]
@@ -12,20 +12,18 @@ PY26 = py_version == (2, 6)
 if PY3:
     if py_version < (3, 2):
         raise RuntimeError(
-            'On Python 3, Blogofile requires Python 3.2 or better')
+            'On Python 3, blogofobe requires Python 3.2 or better')
 else:
     if py_version < (2, 6):
         raise RuntimeError(
-            'On Python 2, Blogofile requires Python 2.6 or better')
+            'On Python 2, blogofobe requires Python 2.6 or better')
 
-description = blogofile_blog.__dist__['pypi_description']
+description = blogofobe_blog.__dist__['pypi_description']
 with open('README.rst', 'rt') as readme:
     long_description = readme.read()
-with open('CHANGES.txt', 'rt') as changes:
-    long_description += '\n\n' + changes.read()
 
 dependencies = [
-    'Blogofile',
+    'blogofobe',
     'six',
     ]
 if PY26:
@@ -56,20 +54,20 @@ classifiers.extend([
 ])
 
 setup(
-    name="blogofile_blog",
-    version=blogofile_blog.__version__,
-    description=blogofile_blog.__dist__['pypi_description'],
+    name="blogofobe_blog",
+    version=blogofobe_blog.__version__,
+    description=blogofobe_blog.__dist__['pypi_description'],
     long_description=long_description,
-    author=blogofile_blog.__dist__["author"],
-    author_email="blogofile-discuss@googlegroups.com",
-    url=blogofile_blog.__dist__["url"],
+    author=blogofobe_blog.__dist__["author"],
+    author_email="wxl@polka.bike",
+    url=blogofobe_blog.__dist__["url"],
     license="MIT",
     classifiers=classifiers,
-    packages=["blogofile_blog"],
-    package_data=find_package_data("blogofile_blog", "site_src"),
+    packages=["blogofobe_blog"],
+    package_data=find_package_data("blogofobe_blog", "site_src"),
     include_package_data=True,
     install_requires=dependencies,
     zip_safe=False,
     entry_points={
-        "blogofile.plugins": ["blogofile_blog = blogofile_blog"]},
+        "blogofobe.plugins": ["blogofobe_blog = blogofobe_blog"]},
 )
