@@ -15,7 +15,7 @@
         ${bf.config.site.author}
       </p>
       <p>
-        Powered by <a href="http://www.blogofile.com">Blogofile</a>
+        Powered by <a href="http://github.com/wxl/blogofobe">blogofobe</a>
       </p>
     </div>
   </div>

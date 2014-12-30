@@ -11,7 +11,7 @@
     <link>${bf.config.blog.url}</link>
     <description>${bf.config.blog.description}</description>
     <pubDate>${datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S GMT")}</pubDate>
-    <generator>Blogofile</generator>
+    <generator>blogofobe</generator>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
 % for post in posts[:10]:

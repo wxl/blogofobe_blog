@@ -8,7 +8,7 @@
   <subtitle type="text">${bf.config.blog.description}</subtitle>
 
   <updated>${datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")}</updated>
-  <generator uri="http://blogofile.com/">Blogofile</generator>
+  <generator uri="http://github.com/wxl/blogofobe">blogofobe</generator>
 
   <link rel="alternate" type="text/html" href="${bf.config.blog.url}" />
   <id>${bf.config.blog.url}/feed/atom/</id>
