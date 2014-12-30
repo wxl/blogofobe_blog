@@ -33,7 +33,7 @@ Orange
 
 ## Some code
 
-This is using the [Fenced Code](http://www.freewisdom.org/projects/python-markdown/Fenced_Code_Blocks) extension to markdown, but Blogofile has [it's own code filter](/blog/2009/08/29/syntax-highlight-test/) that does syntax highlighting too.
+This is using the [Fenced Code](http://www.freewisdom.org/projects/python-markdown/Fenced_Code_Blocks) extension to markdown, but blogofobe has [it's own code filter](/blog/2009/08/29/syntax-highlight-test/) that does syntax highlighting too.
 
 ~~~~{.python}
 import this

@@ -11,7 +11,7 @@ or feeds.
 In other words, without giving out the permalink, no one should ever see this page.
 
 This is useful for seeing your page rendered without showing it to the
-rest of the world. Another alternative pattern for this is using "blogofile
+rest of the world. Another alternative pattern for this is using "blogofobe
 serve" on a local copy of your blog and then pushing changes to the
 server when ready to publish.
 

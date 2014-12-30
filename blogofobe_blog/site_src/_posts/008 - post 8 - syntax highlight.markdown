@@ -12,5 +12,5 @@ if __name__ == "main":
     print "Hello, World!"
 $$/code
 
-This is accomplished with the built-in [syntax highlighter filter](https://github.com/EnigmaCurry/blogofile/blob/master/blogofile/site_init/blog_features/_filters/syntax_highlight.py)
+This is accomplished with the built-in [syntax highlighter filter](https://github.com/wxl/blogofobe/blob/master/blogofobe/site_init/blog_features/_filters/syntax_highlight.py)
 
