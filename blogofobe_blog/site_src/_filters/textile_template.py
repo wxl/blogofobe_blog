@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import textile
 
-from blogofile.cache import HierarchicalCache as HC
+from blogofobe.cache import HierarchicalCache as HC
 
 meta = {
     'name': "Textile",

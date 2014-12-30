@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import markdown
 import logging
-from blogofile.cache import HierarchicalCache as HC
+from blogofobe.cache import HierarchicalCache as HC
 
 """
 A markdown filter - see http://daringfireball.net/projects/markdown

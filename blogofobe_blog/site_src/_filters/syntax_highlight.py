@@ -6,8 +6,8 @@ import os
 import pygments
 from pygments import formatters, util, lexers
 import six
-from blogofile.cache import HierarchicalCache as HC
-import blogofile_bf as bf
+from blogofobe.cache import HierarchicalCache as HC
+import blogofobe_bf as bf
 
 #Example usage:
 """
