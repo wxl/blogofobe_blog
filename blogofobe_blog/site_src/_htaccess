@@ -1,4 +1,4 @@
-# Note for Blogofile users: This file is by default named _htaccess
+# Note for blogofobe users: This file is by default named _htaccess
 # which effectively disables it.  There are some good settings for
 # Apache users, but you have to understand what it all does before
 # just enabling it, especially the expire headers which increase

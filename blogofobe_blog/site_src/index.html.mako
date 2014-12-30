@@ -2,13 +2,13 @@
 <article class="page_box">
 <%self:filter chain="markdown">
 
-Welcome to Blogofile
+Welcome to blogofobe
 ====================
 
-This is an example [Blogofile](http://www.blogofile.com) site that is
+This is an example [blogofobe](http://github.com/wxl/blogofobe) site that is
 optimized for HTML5 browsers.
 
-Please see the [Documentation](http://www.blogofile.com/documentation)
+Please see the [Documentation](http://www.blogofobe.com/documentation)
 for getting started and for customizing your site.
 
 Specific customization points for this example:
