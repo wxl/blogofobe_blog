@@ -6,9 +6,9 @@ try:
 except ImportError:
     from urlparse import urlparse       # For Python 3; flake8 ignore # NOQA
 import six
-from blogofile.cache import bf
-from blogofile.cache import HierarchicalCache as HC
-import blogofile_blog
+from blogofobe.cache import bf
+from blogofobe.cache import HierarchicalCache as HC
+import blogofobe_blog
 
 
 meta = {
@@ -18,7 +18,7 @@ meta = {
     "version": "0.8",
 }
 blog = config = bf.config.plugins.blog
-tools = blogofile_blog.tools
+tools = blogofobe_blog.tools
 
 
 def iter_posts(conditional, limit=None):

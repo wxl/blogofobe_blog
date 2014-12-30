@@ -8,7 +8,7 @@
 ##############################################################################
 
 import operator
-from blogofile.cache import bf
+from blogofobe.cache import bf
 from . import (
     chronological,
     blog,

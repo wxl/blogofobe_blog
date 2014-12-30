@@ -28,19 +28,19 @@ except ImportError:
 import pytz
 import six
 import yaml
-from blogofile import util
-from blogofile.util import create_slug
-# TODO: Why not `blogofile.cache import bf`
-import blogofile_bf as bf
+from blogofobe import util
+from blogofobe.util import create_slug
+# TODO: Why not `blogofobe.cache import bf`
+import blogofobe_bf as bf
 from . import config as blog_config
 
 
-logger = logging.getLogger("blogofile.post")
+logger = logging.getLogger("blogofobe.post")
 
 config = blog_config.post
 config.mod = sys.modules[__name__]
 
-# These are all the Blogofile reserved field names for posts. It is
+# These are all the blogofobe reserved field names for posts. It is
 # recommended that users not re-use any of these field names for
 # purposes other than the one stated.
 reserved_field_names = {

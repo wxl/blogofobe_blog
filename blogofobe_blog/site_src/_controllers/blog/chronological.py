@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Write all the blog posts in reverse chronological order.
 """
-from blogofile.cache import bf
+from blogofobe.cache import bf
 from . import (
     blog,
     tools,

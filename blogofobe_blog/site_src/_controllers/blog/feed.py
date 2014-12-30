@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from blogofile.cache import bf
+from blogofobe.cache import bf
 from . import blog, tools
 
 

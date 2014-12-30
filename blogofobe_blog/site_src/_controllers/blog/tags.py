@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import shutil
 import operator
-from blogofile.cache import bf
+from blogofobe.cache import bf
 
 from . import blog, tools
 from . import feed
