@@ -19,7 +19,7 @@ else:
             'On Python 2, blogofobe requires Python 2.6 or better')
 
 description = blogofobe_blog.__dist__['pypi_description']
-with open('README.rst', 'rt') as readme:
+with open('README.md', 'rt') as readme:
     long_description = readme.read()
 
 dependencies = [
