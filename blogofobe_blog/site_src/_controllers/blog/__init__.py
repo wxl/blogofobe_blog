@@ -60,6 +60,7 @@ def run():
     from . import post
     from . import archives
     from . import categories
+    from . import tags
     from . import chronological
     from . import feed
     from . import permapage
@@ -86,7 +87,7 @@ def run():
                                 # (sorted alphabetically)
     archives.sort_into_archives()
     categories.sort_into_categories()
-    tags.sort_into_categories()
+    tags.sort_into_tags()
     permapage.run()
     chronological.run()
     archives.run()
